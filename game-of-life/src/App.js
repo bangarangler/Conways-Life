@@ -6,6 +6,7 @@ import Board from './components/Board/Board.js'
 function App() {
   // STATE**********
   const [board, setBoard] = useState([]);
+  const [changeState, setChangeState] = useState(false)
 
   // MOUNT / EFFECT *************
   useEffect(() => {
@@ -24,7 +25,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-    <Board board={board} setBoard={setBoard}/>
+    <Board board={board} setBoard={setBoard} changeState={changeState} setChangeState={setChangeState}/>
     </div>
   );
 }

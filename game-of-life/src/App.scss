@@ -1,7 +1,27 @@
 @import './SCSS/mixins.module.scss';
 
 .App {
-  @include center(center, center);
+  //@include center(center, center);
+}
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  //border: 1px solid green;
+  width: 30%;
+
+  button {
+    margin: 3% auto;
+  }
 }
 //.App {
   //text-align: center;

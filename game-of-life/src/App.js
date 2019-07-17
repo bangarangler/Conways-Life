@@ -9,19 +9,24 @@ function App() {
   const [changeState, setChangeState] = useState(false);
 
 
+  // FUNCTION TO START THE GAME
   let timerId;
   const startGame = () => {
     timerId = window.setInterval(gameOfLife, 500)
   }
 
+  // FUNCTION TO STOP THE GAME
   const stopGame = (e) => {
     e.preventDefault()
     window.clearInterval(timerId)
   }
 
+  // LOGIC FOR THE GAME
   const gameOfLife = () => {
     console.log("loop")
+    // ROW
     for (let row = 0; row < board.length;  row++) {
+      // COLUMN
       for (let column = 0; column < board[row].length; column++) {
         let count = 0;
         console.log("Row: ", row, "Column: ", column)

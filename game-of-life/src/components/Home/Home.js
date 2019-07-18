@@ -12,7 +12,7 @@ function Home() {
   // ***** HOOKS *****
   const [tiny] = useState(5);
   const [med] = useState(15);
-  const [big] = useState(30);
+  const [big] = useState(35);
   const [board, setBoard] = useState([]);
   const [changeState, setChangeState] = useState(false);
   const [generation, setGeneration] = useState(-1);

@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Game of Life
 
-## Available Scripts
+Turing Completeness : term used in computability theory to describe abstract machines, usually called automata. Such an automation is Turing complete, if it can be used to emulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete.
 
-In the project directory, you can run:
+*A system of data-manipulation rules (such as a computer's instruction set, a programming language, or a cellular automation) is said to be Turing complete or computationally universal. Can be used to simulate any Turing machine. Meaning system is able to recognize or decide other data-manipulation rule sets.*
 
-### `npm start`
+Turing Machine : mathematical model of computation that defines an abstract machine, which manipulates symbols on a strip of tape according to a table of rules. machine operates on an infinite memory tape divided into discrete "cells". The machine positions its "head" over a cell and "reads" or "scans" the symbol there. Then, as per the symbol and its present place in a "finite table" of user-specified instructions, the machine writes a symbol (digit or a letter from a finite alphabet) in the cell, then either moves the tape one cell left or right, then either proceeds to a subsequent instruction or halts the computation.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Conway's "Game of Life" : 
 
-### `npm test`
+- a zero player game
+- The universe of the game of life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, (or populated and unpopulated, respectively).
+- Every cell interacts with its eight neighbors, which are the cells that are horizontally, vertically, or diagonally adjacent.
+- At each step in time the following transitions occur
+    - any live cell with fewer than two live neighbors dies, as if by underpopulation.
+    - any live cell with two or three live neighbors lives on to the next generation.
+    - any live cell with more than three live neighbors dies, as if by overpopulation
+    - any dead cell with three live neighbors becomes a live cell, as if by reproduction.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The initial pattern constitutes the seed of the system. First generation is created by applying the above rules simultaneously to every cell in the seed; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Rubric](https://www.notion.so/3790b361cbc648a886f2e3104d1ce413)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+[Figma WireFraming](https://www.notion.so/8950d08b102e45748498c7346d77de07)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Objectives
 
-### `npm run eject`
+- Create a unique, high-quality project that can be added to a professional portfolio
+- describe the rules of Conway's "Game of Life"
+- Explain what cellular automata are and describe how they are useful in real life
+- Student should be able to correctly analyze the "Turing Completeness" of Conway's "Game of Life"
+- implement a visualization of Conway's "Game of Life" using technologies related to their specific track
+- "Double buffering" to implement animations
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Todo GOL - Jon Palacio](https://www.notion.so/1208efaae3a84477933ec971dbd83bcc)

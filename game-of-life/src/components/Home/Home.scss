@@ -1,0 +1,113 @@
+@import '../../SCSS/index.module.scss';
+
+.Home {
+  @include center(column);
+  background: #1d1d1d;
+  min-height: 100vh;
+  //border: 2px solid purple;
+  .generationText {
+    @include center(row);
+    color: aqua;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    //border: 2px solid green;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    @media (max-width: 450px) {
+      width: 90%;
+    }
+    a {
+      text-decoration: none;
+      color: silver;
+      font-size: 2.5rem;
+    }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: aqua;
+    }
+  }
+}
+.boardContainer {
+  display: flex;
+  flex-direction: column;
+  //border: 2px solid pink;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //border: 2px solid red;
+  flex-wrap: wrap;
+  width: 90%;
+  button {
+    margin: 3% auto;
+    background: aqua;
+    color: black;
+    font-weight: 700;
+    border: 2px solid hotpink;
+    padding: 3%;
+    min-width: 100px;
+    box-shadow: 1px 3px 3px 1px hotpink;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+  //border: 1px solid green;
+  width: 30%;
+
+  button {
+    margin: 3% auto;
+    background: aqua;
+    color: black;
+    font-weight: 700;
+    border: 2px solid white;
+    padding: 3%;
+    min-width: 100px;
+  }
+}
+//.App {
+  //text-align: center;
+//}
+
+//.App-logo {
+  //animation: App-logo-spin infinite 20s linear;
+  //height: 40vmin;
+  //pointer-events: none;
+//}
+
+//.App-header {
+  //background-color: #282c34;
+  //min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
+  //font-size: calc(10px + 2vmin);
+  //color: white;
+//}
+
+//.App-link {
+  //color: #61dafb;
+//}
+
+//@keyframes App-logo-spin {
+  //from {
+    //transform: rotate(0deg);
+  //}
+  //to {
+    //transform: rotate(360deg);
+  //}
+//}

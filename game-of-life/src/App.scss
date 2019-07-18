@@ -1,79 +1,79 @@
 @import './SCSS/mixins.module.scss';
 
 .App {
-  @include center(center, center);
-  flex-direction: column;
+  @include center(column);
   background: #1d1d1d;
   min-height: 100vh;
-  border: 2px solid purple;
-  .generationText {
-    @include center(center, center);
-    color: aqua;
-  }
-  .flex {
-    display: flex;
-    justify-content: center;
-    //border: 2px solid green;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
-    a {
-      text-decoration: none;
-      color: silver;
-      font-size: 2.5rem;
-    }
-    a:hover {
-      text-decoration: underline;
-      cursor: pointer;
-      color: aqua;
-    }
-  }
-}
-.boardContainer {
-  display: flex;
-  flex-direction: column;
-  //border: 2px solid pink;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
+  //border: 2px solid purple;
+  //.generationText {
+    //@include center(center, center);
+    //color: aqua;
+  //}
+  //.flex {
+    //display: flex;
+    //justify-content: center;
+    ////border: 2px solid green;
+    //align-items: center;
+    //width: 50%;
+    //margin: 0 auto;
+    //a {
+      //text-decoration: none;
+      //color: silver;
+      //font-size: 2.5rem;
+    //}
+    //a:hover {
+      //text-decoration: underline;
+      //cursor: pointer;
+      //color: aqua;
+    //}
+  //}
+//}
+//.boardContainer {
+  //display: flex;
+  //flex-direction: column;
+  ////border: 2px solid pink;
+  //justify-content: center;
+  //align-items: center;
+  //margin: 0 auto;
+//}
 
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //border: 2px solid red;
-  flex-wrap: wrap;
-  width: 90%;
-  button {
-    margin: 3% auto;
-    background: aqua;
-    color: black;
-    font-weight: 700;
-    border: 2px solid white;
-    padding: 3%;
-    min-width: 100px;
-  }
-}
+//.controls {
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  ////border: 2px solid red;
+  //flex-wrap: wrap;
+  //width: 90%;
+  //button {
+    //margin: 3% auto;
+    //background: aqua;
+    //color: black;
+    //font-weight: 700;
+    //border: 2px solid hotpink;
+    //padding: 3%;
+    //min-width: 100px;
+    //box-shadow: 1px 3px 3px 1px hotpink;
+  //}
+//}
 
-.btnContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2% auto;
-  //border: 1px solid green;
-  width: 30%;
+//.btnContainer {
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  //margin: 2% auto;
+  ////border: 1px solid green;
+  //width: 30%;
 
-  button {
-    margin: 3% auto;
-    background: aqua;
-    color: black;
-    font-weight: 700;
-    border: 2px solid white;
-    padding: 3%;
-    min-width: 100px;
-  }
+  //button {
+    //margin: 3% auto;
+    //background: aqua;
+    //color: black;
+    //font-weight: 700;
+    //border: 2px solid white;
+    //padding: 3%;
+    //min-width: 100px;
+  //}
 }
 //.App {
   //text-align: center;

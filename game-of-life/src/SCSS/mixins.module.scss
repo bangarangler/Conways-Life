@@ -1,5 +1,21 @@
-@mixin center($justify, $align) {
+@mixin center($direction) {
 	display: flex;
-	justify-content: $justify;
-	align-items: $align
+	justify-content: center;
+	align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin customLayout($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin customBorder($size, $style, $color) {
+  border: $size $style $color;
+}
+
+@mixin showMe() {
+  border: 2px solid limegreen;
 }

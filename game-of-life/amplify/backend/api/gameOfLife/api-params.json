@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/gameOfLife",
+            "lambdaFunction": "gameoflifee2136ea6",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "gameOfLife",
+    "apiName": "gameOfLife",
+    "functionArns": [
+        {
+            "lambdaFunction": "gameoflifee2136ea6"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "game-of-life-dev-20190718150447-authRole",
+        "unAuthRoleName": "game-of-life-dev-20190718150447-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "gameoflifee2136ea6",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

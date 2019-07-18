@@ -1,12 +1,11 @@
 @import '../../SCSS/index.module.scss';
 
-.InfoContainer {
+.RulesContainer {
   //@include customBorder(2px, solid, hotpink);
   height: 100vh;
-  width: 90%;
   @include customLayout(flex-start, center, column);
   h1 {
-    margin: 8% auto;
+    margin: 5% auto;
     color: aqua;
     font-size: 4rem;
     font-weight: 700;
@@ -16,19 +15,27 @@
       font-size: 1.5rem;
     }
   }
-  p {
-    font-size: 2.5rem;
+  ul {
     color: hotpink;
+    font-size: 2.5rem;
     text-align: justify;
-    line-height: 4rem;
-    margin-bottom: 5%;
+    width: 80%;
     @media (max-width: 450px) {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      height: auto;
+    }
+    @include center(column);
+    li {
+      margin: 2% auto;
+      text-align: justify;
+      //@include showMe();
+      list-style: circle;
     }
   }
   a {
     color: aqua;
     font-size: 3rem;
+    margin-top: 4%;
   }
   a:hover {
     color: hotpink;
